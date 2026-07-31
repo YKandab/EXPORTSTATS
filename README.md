@@ -70,6 +70,7 @@ You can use EXPORTSTATS.EXPORTSTATS for locating or sending the result (as of io
 
 `void setExportLocation(String s)` Choose from where will be the exported bdeko. Base value is in `/EXPORTDATA`.
 `void setPrecision(int x)`: Choose the number of precision, between -1 (unlimited) and +inf. Avoid big number and pick -1, as the biggest the number is, the more complex the BigNumber conversion become
+`void showScience(boolean set)`: Decide if Scientific Notation is active or not on = `6.89e26`, off = `689.49sp`
 
 ### Set up localisation
 
