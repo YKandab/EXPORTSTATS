@@ -15,7 +15,8 @@ public class EXPORTSTATS {
     static String exported = "EXPORTDATA";
     static String inport = "";
     public static Restore r;
-    public static int precision = -1;
+    public static int precision = 3;
+    public static boolean simplify = true;
 
     public static void setJsonLocation(String s){
         inport = s;
@@ -53,6 +54,14 @@ public class EXPORTSTATS {
         return ls;
     }
 
+    public static void turnSimplify(boolean b){
+        simplify = b;
+    }
+
+    public static void turnSimplify(){
+        simplify = !simplify;
+    }
+
     public static String getString(Stats st){
     Object o = r.get(st.toString());
     if (o == null) return ""; 
@@ -67,7 +76,7 @@ public class EXPORTSTATS {
     else if (o instanceof Long lValue) bd = java.math.BigDecimal.valueOf(lValue);
 
     // Si on n'a pas pu en faire un nombre, on prend la String brute
-    String numberStr = (bd != null) ? bd.toPlainString() : o.toString();
+    String numberStr = (bd != null) ? bd.stripTrailingZeros().toPlainString() : o.toString();
 
     // Cas des Statues
     if (st.tag == TagList.Statues && bd != null) {
@@ -85,11 +94,8 @@ public class EXPORTSTATS {
     }
     
     // Application de la précision si demandée
-    if (bd != null && precision > -1) {
-        // On arrondit le BigDecimal directement au lieu de passer par DecimalFormat
-        bd = bd.setScale(precision, java.math.RoundingMode.HALF_UP);
-        numberStr = bd.stripTrailingZeros().toPlainString(); 
-        // toPlainString() empêche STRICTEMENT la notation scientifique (comme 7.2E33)
+    if (bd != null && precision > -1 && simplify) {
+        numberStr = Notation.getBestNotation(bd);
     }
     
     // 2. Traitement des suffixes
@@ -110,58 +116,15 @@ public class EXPORTSTATS {
     }
     
     if (st.name().endsWith("seconds") && bd != null) {
-        // Affiche la partie entière du BigDecimal sans décimales
         return bd.toBigInteger().toString() + "s";
     }
 
     if (st.name().equals("time") && bd != null){
-        return ShortDate.fromOADate(bd.doubleValue()).toString(); // (Seul endroit où le double reste tolérable)
-    }
-
-    if (bd != null) {
-        // stripTrailingZeros() supprime les zéros inutiles, scale <= 0 signifie qu'il ne reste aucune décimale
-        java.math.BigDecimal cleanBd = bd.stripTrailingZeros();
-        if (cleanBd.scale() <= 0) {
-            return cleanBd.toPlainString(); // Retournera "5" au lieu de "5.0"
-        }
-        return cleanBd.toPlainString(); // Optionnel : nettoie aussi les "5.50" en "5.5"
+        return ShortDate.fromOADate(bd.doubleValue()).toString();
     }
     
-    // Retourne la String ultra-précise (avec les 34 chiffres originels)
     return numberStr;
 }
-
-    public static void convertJson(){
-        String path = inport;
-        List<String> ls1 = getAllData();
-        String spath = path;
-        if(Voidable.of(path) != null) spath+="/";
-        for(String s : FileManage.listFileWithExtension(path, ".json")){
-            try{
-                JsonDeko.extract(spath+s);
-            } catch(Exception e){
-                System.out.println(e);
-            }
-        }
-        
-        List<String> elementInData = FileManage.listFileWithExtension(path, ".bdeko");
-
-        for(String s : elementInData){
-            Restore r = new Restore(spath+s);
-            if(!r.getB("EXPORTSTATS")) continue;
-            ShortDate sd = ShortDate.fromOADate((double) r.get("time"));
-            if(r.getB("EXPORTSTATS")){
-                Long ls = sd.getTimestamp();
-                ls/=100000;
-                String l = ls.toString();
-                while(ls1.contains(l+".bdeko")){
-                    l+="_";
-                }
-                r.add("timestamp", ls, "auto");
-                FileManage.deplacerFichier(spath+s, exported+"/"+l+".bdeko");
-            }
-        }
-    }
 
     public static void convertJson(String json, int fileSave){
         long c = System.currentTimeMillis();
@@ -185,7 +148,7 @@ public class EXPORTSTATS {
         Restore r = new Restore(lastPath);
         //if(!r.getB("EXPORTSTATS")) return;
 
-        if(r.check("time"))
+        if(r.getB("EXPORTSTATS"))
             {
                 ShortDate sd = ShortDate.fromOADate((double) r.get("time"));
                 r.add("timestamp", sd.getTimestamp(), "auto");
