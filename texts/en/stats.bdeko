@@ -1,0 +1,540 @@
+~ Stars
+star_spawn_rate_desc(String):
+star_spawn_rate(String): star_spawn_rate
+novagiant_combo_multi_desc(String):
+novagiant_combo_multi(String): novagiant_combo_multi
+super_star_supernova_chance_desc(String):
+super_star_supernova_chance(String): super_star_supernova_chance
+star_radiant_multi_desc(String):
+star_radiant_multi(String): star_radiant_multi
+star_radiant_chance_desc(String):
+star_radiant_chance(String): star_radiant_chance
+star_supergiant_multi_desc(String):
+star_supergiant_multi(String): star_supergiant_multi
+star_supernova_multi_desc(String):
+star_supernova_multi(String): star_supernova_multi
+star_triple_spawn_chance_desc(String):
+star_triple_spawn_chance(String): star_triple_spawn_chance
+super_star_supergiant_chance_desc(String):
+super_star_supergiant_chance(String): super_star_supergiant_chance
+all_star_multi_desc(String):
+all_star_multi(String): all_star_multi
+star_double_spawn_chance_desc(String):
+star_double_spawn_chance(String): star_double_spawn_chance
+super_star_radiant_multi_desc(String):
+super_star_radiant_multi(String): super_star_radiant_multi
+star_supergiant_chance_desc(String):
+star_supergiant_chance(String): star_supergiant_chance
+super_star_supernova_multi_desc(String):
+super_star_supernova_multi(String): super_star_supernova_multi
+super_star_supergiant_multi_desc(String): The multiplier on the value of a Star when it is a Supergiant. (Base: 3x)
+super_star_supergiant_multi(String): super_star_supergiant_multi
+super_star_10x_chance_desc(String): The chance for ten Super Stars to appear when one spawns.
+super_star_10x_chance(String): super_star_10x_chance
+super_star_spawn_multi_desc(String): The multiplier on the chance that a Super Star spawns when a Star spawns. (Base: 1/100)
+super_star_spawn_multi(String): super_star_spawn_multi
+star_auto_catch_chance_desc(String): The chance for a Star to be collected without needing to be tapped.
+star_auto_catch_chance(String): star_auto_catch_chance
+super_star_radiant_chance_desc(String): The chance for a Super Star to spawn as a Radiant Super Star.
+super_star_radiant_chance(String): super_star_radiant_chance
+star_supernova_chance_desc(String): The chance for a Star to spawn as a Supernova.
+star_supernova_chance(String): star_supernova_chance
+candy_eaten_desc(String): The number of candy eaten. The effect caps at 250, but the Candy Eaten stat will keep increasing beyond that point.
+candy_eaten(String): candy_eaten
+super_star_triple_chance_desc(String): The chance for three Super Stars to appear when one spawns.
+super_star_triple_chance(String): super_star_triple_chance
+
+~ auto
+path(String): texts/en/stats.bdeko
+creation(ShortDate): 2/7/26
+
+~ Drone_Unlock
+is_drone_elixir_equipped_and_fueled: is_drone_elixir_equipped_and_fueled
+is_drone_elixir_equipped_and_fueled_desc: Is Elixir Drone Fueled and active
+is_drone_bear_equipped: is_drone_bear_equipped
+is_drone_bear_equipped_desc: Is Bear Drone active
+veinseeker_fuel_grade: veinseeker_fuel_grade
+veinseeker_fuel_grade_desc: Veinseeker Drone current Grade
+is_drone_elixir_equipped: is_drone_elixir_equipped
+is_drone_elixir_equipped_desc: Is Elixir Drone active
+is_drone_frogger_equipped: is_drone_frogger_equipped
+is_drone_frogger_equipped_desc: Is Frogger Drone active
+minotaur_fuel_grade: minotaur_fuel_grade
+minotaur_fuel_grade_desc: Minotaur Drone current Grade
+starburst_fuel_grade: starburst_fuel_grade
+starburst_fuel_grade_desc: Starburst Drone current Grade
+is_drone_prism_equipped_and_fueled: is_drone_prism_equipped_and_fueled
+is_drone_prism_equipped_and_fueled_desc: Is Prism Drone Fueled and active
+is_drone_starburst_equipped_and_fueled: is_drone_starburst_equipped_and_fueled
+is_drone_starburst_equipped_and_fueled_desc: Is Starburst Drone Fueled and active
+is_drone_bear_equipped_and_fueled: is_drone_bear_equipped_and_fueled
+is_drone_bear_equipped_and_fueled_desc: Is Bear Drone Fueled and active
+is_drone_minotaur_equipped_and_fueled: is_drone_minotaur_equipped_and_fueled
+is_drone_minotaur_equipped_and_fueled_desc: Is Minotaur Drone Fueled and active
+midas_fuel_grade: midas_fuel_grade
+midas_fuel_grade_desc: Midas Drone current Grade
+is_drone_chain_equipped_and_fueled: is_drone_chain_equipped_and_fueled
+is_drone_chain_equipped_and_fueled_desc: Is Chain Drone Fueled and active
+is_drone_veinseeker_equipped_and_fueled: is_drone_veinseeker_equipped_and_fueled
+is_drone_veinseeker_equipped_and_fueled_desc: Is Veinseeker Drone Fueled and active
+is_drone_minotaur_equipped: is_drone_minotaur_equipped
+is_drone_minotaur_equipped_desc: Is Minotaur Drone active
+is_drone_frogger_equipped_and_fueled: is_drone_frogger_equipped_and_fueled
+is_drone_frogger_equipped_and_fueled_desc: Is Frogger Drone Fueled and active
+angler_fuel_grade: angler_fuel_grade
+angler_fuel_grade_desc: Angler Drone current Grade
+is_drone_chain_equipped: is_drone_chain_equipped
+is_drone_chain_equipped_desc: Is Chain Drone active
+is_drone_midas_equipped: is_drone_midas_equipped
+is_drone_midas_equipped_desc: Is Midas Drone active
+is_drone_prism_equipped: is_drone_prism_equipped
+is_drone_prism_equipped_desc: Is Prism Drone active
+is_drone_void_equipped: is_drone_void_equipped
+is_drone_void_equipped_desc: Is Void Drone active
+is_drone_midas_equipped_and_fueled: is_drone_midas_equipped_and_fueled
+is_drone_midas_equipped_and_fueled_desc: Is Midas Drone Fueled and active
+bear_fuel_grade: bear_fuel_grade
+bear_fuel_grade_desc: Bear Drone current Grade
+frogger_fuel_grade: frogger_fuel_grade
+frogger_fuel_grade_desc: Frogger Drone current Grade
+is_drone_starburst_equipped: is_drone_starburst_equipped
+is_drone_starburst_equipped_desc: Is Starburst Drone active
+is_drone_void_equipped_and_fueled: is_drone_void_equipped_and_fueled
+is_drone_void_equipped_and_fueled_desc: Is Void Drone Fueled and active
+prism_fuel_grade: prism_fuel_grade
+prism_fuel_grade_desc: Prism Drone current Grade
+void_fuel_grade: void_fuel_grade
+void_fuel_grade_desc: Void Drone current Grade
+chain_fuel_grade: chain_fuel_grade
+chain_fuel_grade_desc: Chain Bomber Drone current Grade
+is_drone_basic_equipped: is_drone_basic_equipped
+is_drone_basic_equipped_desc: Is Base Drone active
+is_drone_angler_equipped: is_drone_angler_equipped
+is_drone_angler_equipped_desc: Is Angler Drone active
+elixir_fuel_grade: elixir_fuel_grade
+elixir_fuel_grade_desc: Elixir Drone current Grade
+is_drone_veinseeker_equipped: is_drone_veinseeker_equipped
+is_drone_veinseeker_equipped_desc: Is Veinseeker Drone active
+is_drone_angler_equipped_and_fueled: is_drone_angler_equipped_and_fueled
+is_drone_angler_equipped_and_fueled_desc: Is Angler Drone Fueled and active
+
+~ Drones
+galactic_void_portal_multi: galactic_void_portal_multi
+galactic_void_portal_multi_desc:
+void_portal_multi: void_portal_multi
+void_portal_multi_desc:
+galactic_void_portal_chance: galactic_void_portal_chance
+galactic_void_portal_chance_desc:
+coal_fuel_save_chance_desc(String):
+coal_fuel_save_chance(String): coal_fuel_save_chance
+drone_suit_cap_desc(String):
+drone_suit_cap(String): drone_suit_cap
+drone_count_desc(String): Number of Drone Owned
+drone_count(String): drone_count
+all_void_portal_multi_desc(String):
+all_void_portal_multi(String): all_void_portal_multi
+golden_void_portal_chance_desc(String):
+golden_void_portal_chance(String): golden_void_portal_chance
+void_portal_chance_desc(String):
+void_portal_chance(String): void_portal_chance
+coal_fuel_duration_multi_desc(String):
+coal_fuel_duration_multi(String): coal_fuel_duration_multi
+drone_triple_damage_chance_desc(String):
+drone_triple_damage_chance(String): drone_triple_damage_chance
+drone_attack_speed_percent_desc(String):
+drone_attack_speed_percent(String): drone_attack_speed_percent
+coal_drone_exp_multi_desc(String):
+coal_drone_exp_multi(String): coal_drone_exp_multi
+elixir_crit_multi_desc(String):
+elixir_crit_multi(String): elixir_crit_multi
+rainbow_void_portal_multi_desc(String):
+rainbow_void_portal_multi(String): rainbow_void_portal_multi
+elixir_crit_chance_desc(String):
+elixir_crit_chance(String): elixir_crit_chance
+golden_void_portal_multi_desc(String):
+golden_void_portal_multi(String): golden_void_portal_multi
+drone_movespeed_percent_desc(String):
+drone_movespeed_percent(String): drone_movespeed_percent
+rainbow_void_portal_chance_desc(String):
+rainbow_void_portal_chance(String): rainbow_void_portal_chance
+coal_generation_seconds_desc(String): The time it takes your generator to produce coal. (Base is 90 seconds, reduced by upgrades and affected by game speed).
+coal_generation_seconds(String): coal_generation_seconds
+void_portal_base_multi_desc(String): Multiplies the Void Drone portal multiplier.
+void_portal_base_multi(String): void_portal_base_multi
+drone_rapid_fire_chance_desc(String): The chance for your drones to attack 5 times instantly.
+drone_rapid_fire_chance(String): drone_rapid_fire_chance
+drone_radius_percent_desc(String): Multiplies the area you can deal damage in. It appears to be a circle, but it's actually a square.
+drone_radius_percent(String): drone_radius_percent
+coal_capacity_multi_desc(String): Multiplies your coal capacity.
+coal_capacity_multi(String): coal_capacity_multi
+drone_damage_percent_desc(String): Multiplies Pickaxe Damage to determine the damage drones do.
+drone_damage_percent(String): drone_damage_percent
+
+~ Bombs
+bomb_crit_damage_desc(String):
+bomb_crit_damage(String): bomb_crit_damage
+bomb_super_crit_chance_desc(String):
+bomb_super_crit_chance(String): bomb_super_crit_chance
+bomb_trans_apply_bop_chance_desc(String):
+bomb_trans_apply_bop_chance(String): bomb_trans_apply_bop_chance
+bomb_recharge_speed_desc(String):
+bomb_recharge_speed(String): bomb_recharge_speed
+bomb_ultra_crit_damage_desc(String):
+bomb_ultra_crit_damage(String): bomb_ultra_crit_damage
+bomb_of_plenty_multi_desc(String):
+bomb_of_plenty_multi(String): bomb_of_plenty_multi
+bomb_workshop_cap_increase_desc(String):
+bomb_workshop_cap_increase(String): bomb_workshop_cap_increase
+bomb_capacity_desc(String):
+bomb_capacity(String): bomb_capacity
+bomb_cap_multiplier_desc(String):
+bomb_cap_multiplier(String): bomb_cap_multiplier
+bomb_ultra_crit_chance_desc(String):
+bomb_ultra_crit_chance(String): bomb_ultra_crit_chance
+bomb_crit_chance_desc(String):
+bomb_crit_chance(String): bomb_crit_chance
+bomb_free_chance_desc(String):
+bomb_free_chance(String): bomb_free_chance
+bomb_cherry3x_chance_desc(String):
+bomb_cherry3x_chance(String): bomb_cherry3x_chance
+bomb_super_crit_damage_desc(String):
+bomb_super_crit_damage(String): bomb_super_crit_damage
+bomb_omega_crit_chance_desc(String): The amount to multiply your damage by when Pickaxe Omega Crit Chance triggers.
+bomb_omega_crit_chance(String): bomb_omega_crit_chance
+bomb_battery_cap_increases_desc(String): The number of times Battery Bomb has triggered a cap increase.
+bomb_battery_cap_increases(String): bomb_battery_cap_increases
+bomb_of_plenty_make_gold_chance_desc(String): Bomb of Plenty turn Gold Ores Chance
+bomb_of_plenty_make_gold_chance(String): bomb_of_plenty_make_gold_chance
+bomb_transmuter_multi_desc(String): Bomb Transmuter Multi
+bomb_transmuter_multi(String): bomb_transmuter_multi
+bomb_damage_desc(String): Bomb damage before factoring in Additional Bomb Multiplier
+bomb_damage(String): bomb_damage
+bomb_additional_multiplier_desc(String): The effect from the All Bomb Multipliers Mythic Relic. Other sources of bomb damage multipliers include base bomb multiplier. Gem Bomb receives an additional multiplier based on gems held. Infinity Bomb receives an additional multiplier based on Infinity bombs fired.
+bomb_additional_multiplier(String): bomb_additional_multiplier
+bomb_omega_crit_damage_desc(String): The amount to multiply your bomb damage by when Bomb Omega Crit Chance triggers.
+bomb_omega_crit_damage(String): bomb_omega_crit_damage
+
+~ Ore
+ores_per_screen: ores_per_screen
+ores_per_screen_desc:
+multi_rock_chance_desc(String):
+multi_rock_chance(String): multi_rock_chance
+ore_income_multi_desc(String):
+ore_income_multi(String): ore_income_multi
+bar_craft_cost_multi_desc(String):
+bar_craft_cost_multi(String): bar_craft_cost_multi
+golden_floor_chance_desc(String):
+golden_floor_chance(String): golden_floor_chance
+bar_output_multi_desc(String):
+bar_output_multi(String): bar_output_multi
+ore_sell_price_multi_desc(String):
+ore_sell_price_multi(String): ore_sell_price_multi
+steak_eaten_desc(String):
+steak_eaten(String): steak_eaten
+bar_upgrade_cost_reduction_desc(String):
+bar_upgrade_cost_reduction(String): bar_upgrade_cost_reduction
+rainbow_floor_chance_desc(String):
+rainbow_floor_chance(String): rainbow_floor_chance
+pizzas_eaten_desc(String):
+pizzas_eaten(String): pizzas_eaten
+galactic_floor_multi_desc(String):
+galactic_floor_multi(String): galactic_floor_multi
+golden_ore_chance_desc(String):
+golden_ore_chance(String): golden_ore_chance
+golden_floor_multi_desc(String): The multiplier to ore gained when Golden Ore Chance triggers. (Base: 3x)
+golden_floor_multi(String): golden_floor_multi
+golden_ore_multi_desc(String): The multiplier to ore gained when Golden Ore Chance triggers. (Base: 3x)
+golden_ore_multi(String): golden_ore_multi
+all_floor_multipliers_desc(String): Multiplies Gold, Rainbow, Galactic, and Prismatic floor multipliers.
+all_floor_multipliers(String): all_floor_multipliers
+galactic_floor_chance_desc(String): The chance for a floor to be a Galactic Rainbow floor. Only rolls on Rainbow floors.
+galactic_floor_chance(String): galactic_floor_chance
+prismatic_floor_chance_desc(String): The chance for a floor to be a Prismatic Galactic Rainbow floor. Only rolls on Galactic Rainbow Floors.
+prismatic_floor_chance(String): prismatic_floor_chance
+prismatic_floor_multi_desc(String): The multiplier to ore gained from a Prismatic Galactic Rainbow Floor. The All Floor Multi is factored into the displayed amount. (Base: 1x)
+prismatic_floor_multi(String): prismatic_floor_multi
+rainbow_floor_multi_desc(String): The multiplier to ore gained when Rainbow Floor Chance triggers. The All Floor Multi is factored into the displayed amount. (Base: 50x)
+rainbow_floor_multi(String): rainbow_floor_multi
+
+~ Contracts
+contract_cap_increase_desc(String): The increase to the maximum level of Contract Upgrades.
+contract_cap_increase(String): contract_cap_increase
+contract_5x_points_chance_desc(String): The chance to be awarded 5x Contract Points upon completing a Contract.
+contract_5x_points_chance(String): contract_5x_points_chance
+contract_triple_points_chance_desc(String): The chance to be awarded 3x Contract Points upon completing a Contract.
+contract_triple_points_chance(String): contract_triple_points_chance
+contract_points_rewarded_desc(String): The base amount of Contract Points awarded upon completing a Contract. Starts at 10.
+contract_points_rewarded(String): contract_points_rewarded
+contract_double_points_chance_desc(String): The chance to be awarded 2x Contract Points upon completing a Contract.
+contract_double_points_chance(String): contract_double_points_chance
+contract_10x_points_chance_desc(String): The chance to be awarded 10x Contract Points upon completing a Contract.
+contract_10x_points_chance(String): contract_10x_points_chance
+contract_cost_reduction_desc(String): Reduces the amount of bars required to complete Contracts.
+contract_cost_reduction(String): contract_cost_reduction
+contract_upgrade_cost_reduction_desc(String): The amount by which Contract Upgrade costs are multiplied.
+contract_upgrade_cost_reduction(String): contract_upgrade_cost_reduction
+
+~ Crafting
+double_craft_chance_desc(String):
+double_craft_chance(String): double_craft_chance
+craft_20x_chance_desc(String):
+craft_20x_chance(String): craft_20x_chance
+triple_craft_chance_desc(String):
+triple_craft_chance(String): triple_craft_chance
+craft_10x_chance_desc(String):
+craft_10x_chance(String): craft_10x_chance
+craft_5x_chance_desc(String):
+craft_5x_chance(String): craft_5x_chance
+free_craft_chance_desc(String):
+free_craft_chance(String): free_craft_chance
+craft_100x_chance_desc(String): The chance for a craft to give 100x bars.
+craft_100x_chance(String): craft_100x_chance
+
+~ Fishing
+fishing_rod_power_desc(String):
+fishing_rod_power(String): fishing_rod_power
+fishing_tiny_notice_chance_desc(String):
+fishing_tiny_notice_chance(String): fishing_tiny_notice_chance
+fishing_double_tick_chance_desc(String):
+fishing_double_tick_chance(String): fishing_double_tick_chance
+fishing_income_multi_desc(String):
+fishing_income_multi(String): fishing_income_multi
+fishing_tick_speed_desc(String):
+fishing_tick_speed(String): fishing_tick_speed
+fishing_tick_reduction_seconds_desc(String):
+fishing_tick_reduction_seconds(String): fishing_tick_reduction_seconds
+fishing_super_shiny_chance_desc(String):
+fishing_super_shiny_chance(String): fishing_super_shiny_chance
+fishing_triple_tick_chance_desc(String):
+fishing_triple_tick_chance(String): fishing_triple_tick_chance
+fishing_drone_capacity_desc(String):
+fishing_drone_capacity(String): fishing_drone_capacity
+fishing_shiny_chance_desc(String):
+fishing_shiny_chance(String): fishing_shiny_chance
+fishing_token_multi_desc(String):
+fishing_token_multi(String): fishing_token_multi
+fishing_drone_multiplier_desc(String):
+fishing_drone_multiplier(String): fishing_drone_multiplier
+fishing_shiny_multi_desc(String): The multiplier on fish caught when a catch is shiny. (Base: 3x)
+fishing_shiny_multi(String): fishing_shiny_multi
+fishing_notice_requirement_desc(String): The reduction in the number of fish requested by Notices.
+fishing_notice_requirement(String): fishing_notice_requirement
+fishing_tier2_dock_multi_desc(String): The multiplier to fishing power on Tier 2 Docks.
+fishing_tier2_dock_multi(String): fishing_tier2_dock_multi
+fishing_5x_tick_chance_desc(String): The chance to get 5 Fishing ticks when the tick bar fills up.
+fishing_5x_tick_chance(String): fishing_5x_tick_chance
+fishing_drone_power_desc(String): The base fishing power from a single Fishing Drone. (Base: 3)
+fishing_drone_power(String): fishing_drone_power
+fishing_super_shiny_multi_desc(String): The multoplier on fish caught when a shiny catch is super shiny. (Base: 2x)
+fishing_super_shiny_multi(String): fishing_super_shiny_multi
+
+~ Statues
+statue_8_set3_desc(String): Statue of Rodentia (Kromak)
+statue_8_set3(String): statue_8_set3
+statue_7_set3_desc(String): Statue of Fallacy (Berty)
+statue_7_set3(String): statue_7_set3
+statue_6_set3_desc(String): Statue of Antagonism (Loop)
+statue_6_set3(String): statue_6_set3
+statue_5_set3_desc(String): Statue of Crochet (Kripp)
+statue_5_set3(String): statue_5_set3
+statue_4_set3_desc(String): Statue of Semblance (Vak)
+statue_4_set3(String): statue_4_set3
+statue_3_set3_desc(String): Statue of Nature (Fanq)
+statue_3_set3(String): statue_3_set3
+statue_2_set3_desc(String): Statue of Combat (Sans)
+statue_2_set3(String): statue_2_set3
+statue_1_set3_desc(String): Statue of Timekeeping (Karma)
+statue_1_set3(String): statue_1_set3
+statue_0_set3_desc(String): Statue of Comfort (Lute)
+statue_0_set3(String): statue_0_set3
+statue_8_set2_desc(String): Statue of Soprano (Praed)
+statue_8_set2(String): statue_8_set2
+statue_7_set2_desc(String): Statue of Eastwood (MLNW)
+statue_7_set2(String): statue_7_set2
+statue_6_set2_desc(String): Statue of Affluence (Kohanu)
+statue_6_set2(String): statue_6_set2
+statue_5_set2_desc(String): Statue of Feline (Iseburge)
+statue_5_set2(String): statue_5_set2
+statue_4_set2_desc(String): Statue of Warmth (Satio)
+statue_4_set2(String): statue_4_set2
+statue_3_set2_desc(String): Statue of Ignition (Julk)
+statue_3_set2(String): statue_3_set2
+statue_2_set2_desc(String): Statue of Safety (Zuiqiang)
+statue_2_set2(String): statue_2_set2
+statue_1_set2_desc(String): Statue of Propulsion (Guard)
+statue_1_set2(String): statue_1_set2
+statue_0_set2_desc(String): Statue of Craftmanship (Vydn)
+statue_0_set2(String): statue_0_set2
+statue_8_set1_desc(String): Statue of Childhood (Salutem)
+statue_8_set1(String): statue_8_set1
+statue_7_set1_desc(String): Statue of Randomness (Jolly)
+statue_7_set1(String): statue_7_set1
+statue_6_set1_desc(String): Statue of Artistry (Celio)
+statue_6_set1(String): statue_6_set1
+statue_5_set1_desc(String): Statue of Hygiene (Totefm)
+statue_5_set1(String): statue_5_set1
+statue_4_set1_desc(String): Statue of Friendship (Caulwik)
+statue_4_set1(String): statue_4_set1
+statue_3_set1_desc(String): Statue of Appetite (Frozen)
+statue_3_set1(String): statue_3_set1
+statue_2_set1_desc(String): Statue of Slaying (Dark)
+statue_2_set1(String): statue_2_set1
+statue_1_set1_desc(String): Statue of Awareness (Tor)
+statue_1_set1(String): statue_1_set1
+statue_0_set1_desc(String): Statue of Rhythm (Xanz)
+statue_0_set1(String): statue_0_set1
+
+~ Misc
+infernal_card_multi: infernal_card_multi
+infernal_card_multi_desc: 
+gem_upgrade_cap_increase_desc(String): Increases the cap of Gem Upgrades in the Store.
+gem_upgrade_cap_increase(String): gem_upgrade_cap_increase
+item_duration_multi_desc(String): Increases Item duration.
+item_duration_multi(String): item_duration_multi
+pet_levelup_chance_multi_desc(String): Increases the chance for a Pet to level up when completing the leveling action.
+pet_levelup_chance_multi(String): pet_levelup_chance_multi
+game_speed_multi_desc(String): Modifies the speed at which the game runs.
+game_speed_multi(String): game_speed_multi
+
+
+~ Chests
+freebie_refresh_chance_desc(String): The chance for a Freebie to become claimable again immediately after being claimed.
+freebie_refresh_chance(String): freebie_refresh_chance
+freebie_cooldown_seconds_desc(String): The cooldown in between Freebie claims. (Base: 10 minutes.)
+freebie_cooldown_seconds(String): freebie_cooldown_seconds
+ultra_stonks_chance_desc(String): The chance for a Super Stonks roll to become an Ultra Stonks roll.
+ultra_stonks_chance(String): ultra_stonks_chance
+freebie_bank_cap_desc(String): How many Freebies you can accumulate before claiming them. (Base: 2.)
+freebie_bank_cap(String): freebie_bank_cap
+stonks_chance_desc(String): The chance for a Freebie to roll a Stonks reward when claimed. The chance is rolled once for item chests, relic chests and gems. You can get multiple different rewards from a single freebie.
+stonks_chance(String): stonks_chance
+ultra_stonks_multi_desc(String): The multiplier to rewards when Ultra Stonks procs. The All Stonks Multi is factored into the displayed amount. (Base: 25x)
+ultra_stonks_multi(String): ultra_stonks_multi
+super_stonks_chance_desc(String): The chance for a "Stonks!" roll to become a Super Stonks roll.
+super_stonks_chance(String): super_stonks_chance
+freebie_5x_chance_desc(String): Rolls 4 extra times for normal Freebie loot and the bonus Relic Chest
+freebie_5x_chance(String): freebie_5x_chance
+chest_items_bonus_desc(String): How many Items you receive when you open an Item Chest.
+chest_items_bonus(String): chest_items_bonus
+stonks_multi_desc(String): The multiplier to base Stonks rewards. The All Stonks Multi is factored into the displayed amount. (Base: 1x)
+stonks_multi(String): stonks_multi
+freebie_gems_bonus_desc(String): How many gems you receive from a Freebie Pack (base 5).
+freebie_gems_bonus(String): freebie_gems_bonus
+super_stonks_multi_desc(String): The multiplier to rewards when Super Stonks procs. The All Stonks Multi is factored into the displayed amount. (Base: 2x)
+super_stonks_multi(String): super_stonks_multi
+chest_meter_multi_desc(String): How quickly the Item and Relic Chest meters fill up. Actually functions by reducing the damage requirement.
+chest_meter_multi(String): chest_meter_multi
+chest_double_chance_desc(String): The chance to receive 2 Item and Relic Chests when the respective bar fills up.
+chest_double_chance(String): chest_double_chance
+
+~ Lootfrogs
+lootfrog_massive_multi: lootfrog_massive_multi
+lootfrog_massive_multi_desc: The multiplier on Massive Lootfrog rewards. (Base: 3x)
+lootfrogs_caught_desc(String): The number of Lootfrogs that you have caught by tapping them when they spawn. Lootfrogs are spawned by the Fueled Frogger Drone after purchasing a Black Hole buff.
+lootfrogs_caught(String): lootfrogs_caught
+lootfrog_big_multi_desc(String): The multiplier on Big Lootfrog rewards. (Base: 5x)
+lootfrog_big_multi(String): lootfrog_big_multi
+lootfrog_big_chance_desc(String): The chance for a Lootfrog to spawn as a big Lootfrog.
+lootfrog_big_chance(String): lootfrog_big_chance
+lootfrog_10x_spawn_chance_desc(String): The chance for 10 Lootfrogs to spawn in place of 1.
+lootfrog_10x_spawn_chance(String): lootfrog_10x_spawn_chance
+lootfrog_capacity_desc(String): The maximum number of Lootfrogs that may be on the screen at one time. (Base: 5)
+lootfrog_capacity(String): lootfrog_capacity
+lootfrog_golden_multi_desc(String): The multiplier on Lootfrog rewards when a Lootfrog spawns as a Golden Lootfrog. (Base: 2x)
+lootfrog_golden_multi(String): lootfrog_golden_multi
+golden_lootfrogs_caught_desc(String): The number of Golden Lootfrogs that you have caught by tapping them when they spawn. Golden Lootfrogs have a chance to spawn instead of normal Lootfrogs after you get Golden Lootfrog Chance.
+golden_lootfrogs_caught(String): golden_lootfrogs_caught
+lootfrog_loot_multi_desc(String): The multiplier to loot from Lootfrogs.
+lootfrog_loot_multi(String): lootfrog_loot_multi
+lootfrog_triple_spawn_chance_desc(String): The chance for 3 Lootfrogs to spawn in place of 1.
+lootfrog_triple_spawn_chance(String): lootfrog_triple_spawn_chance
+lootfrog_golden_chance_desc(String): The chance for a Lootfrog to appear as a Golden Lootfrog.
+lootfrog_golden_chance(String): lootfrog_golden_chance
+lootfrog_massive_chance: lootfrog_massive_chance
+lootfrog_massive_chance_desc: The chance for a Big Lootfrog to spawn as a Massive Lootfrog instead.
+
+~ Obelisk
+obelisk_armor_reduction_desc(String): The multiplier applied to an Obelisk's Base Armor
+obelisk_armor_reduction(String): obelisk_armor_reduction
+obelisk_cooldown_multi_desc(String): How much time you need to wait in between Obelisk fight attempts.
+obelisk_cooldown_multi(String): obelisk_cooldown_multi
+obelisk_timer_add_desc(String): How much time you have to deal damage to the Obelisk per attempt.
+obelisk_timer_add(String): obelisk_timer_add
+
+~ Pickaxe
+pickaxe_crit_damage_desc(String): The amount to multiply your damage by when Pickaxe Crit Chance triggers.
+pickaxe_crit_damage(String): pickaxe_crit_damage
+pickaxe_omega_crit_damage_desc(String): The amount to multiply your damage by when Pickaxe Omega Crit Chance triggers.
+pickaxe_omega_crit_damage(String): pickaxe_omega_crit_damage
+pickaxe_radius_percent_desc(String): Multiplies the area you can deal damage in. It appears to be a circle, but it's actually a square.
+pickaxe_radius_percent(String): pickaxe_radius_percent
+pickaxe_attack_speed_per_second_desc(String): How many times per second you deal pickaxe damage while holding.
+pickaxe_attack_speed_per_second(String): pickaxe_attack_speed_per_second
+pickaxe_super_crit_chance_desc(String): The amount to multiply your damage by when Super Crit Chance triggers.
+pickaxe_super_crit_chance(String): pickaxe_super_crit_chance
+pickaxe_ultra_crit_chance_desc(String): The amount to multiply your damage by when Pickaxe Ultra Crit Chance triggers.
+pickaxe_ultra_crit_chance(String): pickaxe_ultra_crit_chance
+pickaxe_crit_chance_desc(String): The chance to multiply your damage by Pickaxe Crit Damage.
+pickaxe_crit_chance(String): pickaxe_crit_chance
+pickaxe_ultra_crit_damage_desc(String): The amount to multiply your damage by when Pickaxe Ultra Crit Chance triggers.
+pickaxe_ultra_crit_damage(String): pickaxe_ultra_crit_damage
+pickaxe_omega_crit_chance_desc(String): The chance to multiply your damage by Pickaxe Omega Crit Damage. Only rolls when Pickaxe Ultra Crit Chance activates.
+pickaxe_omega_crit_chance(String): pickaxe_omega_crit_chance
+pickaxe_super_crit_damage_desc(String): The amount to multiply your damage by when Super Crit Chance triggers.
+pickaxe_super_crit_damage(String): pickaxe_super_crit_damage
+pickaxe_damage_desc(String): How much damage you do when holding the screen. It's the only way to deal damage to Obelisks. Obelisk Armor is subtracted from your Pickaxe Damage before crits are calculated. If you have less Pickaxe Damage than the Obelisk has Armor, you will always do 0 damage regardless of crits. Drone Damage is based on Pickaxe Damage.
+pickaxe_damage(String): pickaxe_damage
+
+~ Veins
+vein_spawn_rate_multi_desc(String): The multiplier that is determined by a Vein's rarity to determine the chance that an Ore becomes a Vein.
+vein_spawn_rate_multi(String): vein_spawn_rate_multi
+golden_vein_multi_desc(String): The multiplier to Veins gained when a Vein rolls as a Golden Vein. (Base: 5x)
+golden_vein_multi(String): golden_vein_multi
+gleaming_vein_multi_desc(String): The multiplier to Veins gained applied to Gleaming Veins. (Base: 5x)
+gleaming_vein_multi(String): gleaming_vein_multi
+golden_vein_chance_desc(String): The chance for a Vein to roll as a Golden Vein.
+golden_vein_chance(String): golden_vein_chance
+rainbow_vein_chance_desc(String): The chance for a Golden Vein to roll as a Rainbow Vein.
+rainbow_vein_chance(String): rainbow_vein_chance
+gleaming_vein_chance_desc(String): The chance for a Vein to roll as a Gleaming Vein.
+gleaming_vein_chance(String): gleaming_vein_chance
+vein_income_multi_desc(String): A multiplier that is applied to all Vein gains.
+vein_income_multi(String): vein_income_multi
+rainbow_vein_multi_desc(String): The multiplier applied to Golden Veins when they roll as Rainbow Veins. (Base: 20x)
+rainbow_vein_multi(String): rainbow_vein_multi
+
+~ Lootbugs
+lootbug_spawn_rate_desc(String): Increases the rate at which Lootbugs appear.
+lootbug_spawn_rate(String): lootbug_spawn_rate
+lootbug_gem_cost_reduction_desc(String): The amount by which the gem cost of purchasable loot is reduced.
+lootbug_gem_cost_reduction(String): lootbug_gem_cost_reduction
+lootbug_loot_multi_desc(String): The multiplier on Lootbug rewards. Rewards which multiply to non-integers but must be integers randomly give the integers on either side of the value.
+lootbug_loot_multi(String): lootbug_loot_multi
+lootbug_triple_chance_desc(String): The chance for 3 Lootbugs to appear when a spawn occurs.
+lootbug_triple_chance(String): lootbug_triple_chance
+lootbug_bank_cap_desc(String): How many Lootbugs you can keep in storage in addition to the one on screen.
+lootbug_bank_cap(String): lootbug_bank_cap
+lootbug_golden_chance_desc(String): The chance for the Lootbug purchasable loot to be free.
+lootbug_golden_chance(String): lootbug_golden_chance
+lootfrog_lanterns_used_desc(String): The number of lootbug lanterns used. The effect caps at 25, but the Lanterns Used stat will keep increasing beyond that point.
+lootfrog_lanterns_used(String): lootfrog_lanterns_used
+
+~ Prestige
+prestige_point_multi_desc(String): The multiplier on the number of Prestige Points gained.
+prestige_point_multi(String): prestige_point_multi
+artifact_cap_increase_desc(String): The increase to the max upgrade level of Artifacts.
+artifact_cap_increase(String): artifact_cap_increase
+artifact_tier4_cap_increase_desc(String): The increase to the max upgrade level of Tier 4 Artifacts.
+artifact_tier4_cap_increase(String): artifact_tier4_cap_increase
+xp_level_cap_desc(String): The maximum level you can reach with EXP.
+xp_level_cap(String): xp_level_cap
+experience_multi_desc(String): The multiplier on Experience gained.
+experience_multi(String): experience_multi
+floor_clear_requirement_multi_desc(String): The multiplier on the number of times a floor must be cleared to move on to the next floor.
+floor_clear_requirement_multi(String): floor_clear_requirement_multi
+
+~ Others
+version_desc(String): Current Game Version
+version(String): version
+time_desc(String): Moment of the creation of the json
+time(String): time

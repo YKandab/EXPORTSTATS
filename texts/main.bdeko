@@ -1,0 +1,6 @@
+~ start
+main(String): en
+others(List): fr
+
+~ link
+stats(List): s;=;stat;=;stats
