@@ -97,4 +97,4 @@ You can use EXPORTSTATS.EXPORTSTATS for locating or sending the result (as of io
 > Localisation module is for now limited. Adding entry is for now limited
 
 ## Usage Example
-Soon
+You can have a demo app created with that jar in releases (Android 12+)
