@@ -12,14 +12,14 @@ Still WIP: It is updated to 2.2.6 BUT it still requires some localization in tex
 ### Read Json
 This part is about `Export.convertJson(String json, int fileSave)`
 `json` is the EXPORTSTATS given json. If it is not a json, the app crashes.
-FileManage converts the clipboard bits into a String, call JsonDeko and org.json.
+FileManage converts the bits into a String, call JsonDeko and org.json.
 
 First, it will ensure root file last.bdeko, used as cache, is removed.
 
 Org.json verify your entry, and JsonDeko convert it into my own file.
 
 > [!CAUTION]
-> If it crashes, the clipboard entry isn't a json and the app cancels everything
+> If it crashes, the entry isn't a json and the app cancels everything
 
 > [!TIP]
 > If your game or this code is outdated, the file would still work. It just would seems glitchy (if the game is outdated) or can have invalid element (if this code is outdated)
