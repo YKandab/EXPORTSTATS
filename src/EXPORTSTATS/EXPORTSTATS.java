@@ -17,6 +17,11 @@ public class EXPORTSTATS {
     public static Restore r;
     public static int precision = 3;
 
+    public static void showScience(boolean set){
+        Restore r = new Restore("settings.bdeko");
+        r.add("scientific", set);
+        Notation.scientificNotation = set;
+    }
 
     public static void setExportLocation(String s){
         exported = s;
@@ -160,6 +165,7 @@ public class EXPORTSTATS {
     }
 
     public static void load(int x){
+        Notation.scientificNotation = new Restore("settings.bdeko").getB("scientific");
         r = new Restore(exported+"/"+x+".bdeko");
         if(!r.exists()) {r = null; return;}
         if(r.check("precision")) precision = (int) r.get("precision");

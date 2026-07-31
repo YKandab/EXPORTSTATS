@@ -8,6 +8,7 @@ public enum Notation {
     ddc(39), tdc(42), qadc(45), qidc(48), sxdc(51), spdc(54), odc(57), ndc(60);
 
     private final BigDecimal divisor;
+    public static boolean scientificNotation = false;
 
     private Notation(int exponent) {
         this.divisor = BigDecimal.TEN.pow(exponent);
@@ -22,6 +23,10 @@ public enum Notation {
         BigDecimal abs = number.abs();
         if (abs.compareTo(BigDecimal.ZERO) == 0) {
             return "0";
+        }
+
+        if (scientificNotation) {
+            return toScientific(number);
         }
 
         BigDecimal minThreshold = BigDecimal.valueOf(100000);
@@ -51,6 +56,14 @@ public enum Notation {
         return formatted + chosen.name();
     }
 
+    private static String toScientific(BigDecimal number) {
+        BigDecimal abs = number.abs();
+        int exponent = getExponent(abs);
+        BigDecimal mantissa = number.movePointLeft(exponent).setScale(EXPORTSTATS.precision, RoundingMode.HALF_UP);
+        String formatted = stripTrailing(mantissa);
+        return formatted + "e" + exponent;
+    }
+
     private static String roundToPrecision(BigDecimal number) {
         BigDecimal scaled = number.setScale(EXPORTSTATS.precision, RoundingMode.HALF_UP);
         return stripTrailing(scaled);
@@ -62,5 +75,10 @@ public enum Notation {
             stripped = stripped.setScale(0);
         }
         return stripped.toPlainString();
+    }
+
+    private static int getExponent(BigDecimal number) {
+        BigDecimal stripped = number.stripTrailingZeros();
+        return stripped.precision() - stripped.scale() - 1;
     }
 }
