@@ -16,7 +16,6 @@ public class EXPORTSTATS {
     static String inport = "";
     public static Restore r;
     public static int precision = 3;
-    public static boolean simplify = true;
 
     public static void setJsonLocation(String s){
         inport = s;
@@ -54,14 +53,6 @@ public class EXPORTSTATS {
         return ls;
     }
 
-    public static void turnSimplify(boolean b){
-        simplify = b;
-    }
-
-    public static void turnSimplify(){
-        simplify = !simplify;
-    }
-
     public static String getString(Stats st){
     Object o = r.get(st.toString());
     if (o == null) return ""; 
@@ -94,7 +85,7 @@ public class EXPORTSTATS {
     }
     
     // Application de la précision si demandée
-    if (bd != null && precision > -1 && simplify) {
+    if (bd != null && precision > -1) {
         numberStr = Notation.getBestNotation(bd);
     }
     
@@ -115,8 +106,8 @@ public class EXPORTSTATS {
         return red.stripTrailingZeros().toPlainString() + "x";
     }
     
-    if (st.name().endsWith("seconds") && bd != null) {
-        return bd.toBigInteger().toString() + "s";
+    if (st.name().endsWith("seconds") || st.name().endsWith("second") && bd != null) {
+        return numberStr + "s";
     }
 
     if (st.name().equals("time") && bd != null){

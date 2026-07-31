@@ -24,9 +24,13 @@ public enum Notation {
             return "0";
         }
 
-        int magnitude = getExponent(abs);
-        if (EXPORTSTATS.precision > magnitude || magnitude < 3) {
-            return stripTrailing(number);
+        BigDecimal minThreshold = BigDecimal.valueOf(100000);
+        BigDecimal threshold = BigDecimal.TEN.pow(EXPORTSTATS.precision + 3);
+        if (threshold.compareTo(minThreshold) < 0) {
+            threshold = minThreshold;
+        }
+        if (abs.compareTo(threshold) < 0) {
+            return roundToPrecision(number);
         }
 
         Notation chosen = null;
@@ -39,12 +43,17 @@ public enum Notation {
         }
 
         if (chosen == null) {
-            return stripTrailing(number);
+            return roundToPrecision(number);
         }
 
         BigDecimal scaled = number.divide(chosen.divisor, EXPORTSTATS.precision, RoundingMode.HALF_UP);
         String formatted = scaled.toPlainString();
         return formatted + chosen.name();
+    }
+
+    private static String roundToPrecision(BigDecimal number) {
+        BigDecimal scaled = number.setScale(EXPORTSTATS.precision, RoundingMode.HALF_UP);
+        return stripTrailing(scaled);
     }
 
     private static String stripTrailing(BigDecimal number) {
@@ -53,9 +62,5 @@ public enum Notation {
             stripped = stripped.setScale(0);
         }
         return stripped.toPlainString();
-    }
-
-    private static int getExponent(BigDecimal number) {
-        return number.precision() - number.scale() - 1;
     }
 }
