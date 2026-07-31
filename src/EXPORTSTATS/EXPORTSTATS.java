@@ -99,11 +99,7 @@ public class EXPORTSTATS {
         }
         
         if ((st.name().endsWith("reduction") || st.name().endsWith("requirement")) && bd != null && bd.compareTo(java.math.BigDecimal.ZERO) > 0 && bd.compareTo(java.math.BigDecimal.ONE) < 0){
-            java.math.BigDecimal red = java.math.BigDecimal.ONE.subtract(bd);
-            if (precision > -1) {
-                red = red.setScale(precision, java.math.RoundingMode.HALF_UP);
-            }
-            return red.stripTrailingZeros().toPlainString() + "x";
+            return numberStr + "x";
         }
         
         if (st.name().endsWith("seconds") || st.name().endsWith("second") && bd != null) {

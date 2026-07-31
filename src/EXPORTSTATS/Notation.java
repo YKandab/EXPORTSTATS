@@ -16,40 +16,39 @@ public enum Notation {
 
     public static String getBestNotation(BigDecimal number) {
         if (number == null) return "";
-        if (EXPORTSTATS.precision == -1) {
+        if (EXPORTSTATS.precision == -1) 
             return number.toBigInteger().toString();
-        }
+        
 
         BigDecimal abs = number.abs();
-        if (abs.compareTo(BigDecimal.ZERO) == 0) {
+        if (abs.compareTo(BigDecimal.ZERO) == 0) 
             return "0";
-        }
 
-        if (scientificNotation) {
+
+        if (scientificNotation) 
             return toScientific(number);
-        }
+        
 
         BigDecimal minThreshold = BigDecimal.valueOf(100000);
         BigDecimal threshold = BigDecimal.TEN.pow(EXPORTSTATS.precision + 3);
-        if (threshold.compareTo(minThreshold) < 0) {
+        if (threshold.compareTo(minThreshold) < 0) 
             threshold = minThreshold;
-        }
-        if (abs.compareTo(threshold) < 0) {
+
+        if (abs.compareTo(threshold) < 0) 
             return roundToPrecision(number);
-        }
+
 
         Notation chosen = null;
-        for (Notation notation : values()) {
-            if (abs.compareTo(notation.divisor) >= 0) {
+        for (Notation notation : values()) 
+            if (abs.compareTo(notation.divisor) >= 0) 
                 chosen = notation;
-            } else {
+            else 
                 break;
-            }
-        }
+        
 
-        if (chosen == null) {
+        if (chosen == null) 
             return roundToPrecision(number);
-        }
+        
 
         BigDecimal scaled = number.divide(chosen.divisor, EXPORTSTATS.precision, RoundingMode.HALF_UP);
         String formatted = scaled.toPlainString();
@@ -71,9 +70,9 @@ public enum Notation {
 
     private static String stripTrailing(BigDecimal number) {
         BigDecimal stripped = number.stripTrailingZeros();
-        if (stripped.scale() < 0) {
+        if (stripped.scale() < 0) 
             stripped = stripped.setScale(0);
-        }
+
         return stripped.toPlainString();
     }
 
