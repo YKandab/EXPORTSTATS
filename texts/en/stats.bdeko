@@ -1,31 +1,31 @@
 ~ Stars
-star_spawn_rate_desc(String):
+star_spawn_rate_desc(String): The multiplier on the chance that a Star spawns when a floor is cleared. (Base: 1/50)
 star_spawn_rate(String): star_spawn_rate
-novagiant_combo_multi_desc(String):
+novagiant_combo_multi_desc(String): The multiplier on the value of Supergiant Supernova Stars and Super Stars.
 novagiant_combo_multi(String): novagiant_combo_multi
-super_star_supernova_chance_desc(String):
+super_star_supernova_chance_desc(String): The chance for a Super Star to spawn as a Supernova.
 super_star_supernova_chance(String): super_star_supernova_chance
-star_radiant_multi_desc(String):
+star_radiant_multi_desc(String): The multiplier on the value of a star when it is a Radiant Star. (Base: 10x)
 star_radiant_multi(String): star_radiant_multi
-star_radiant_chance_desc(String):
+star_radiant_chance_desc(String): The chance for a star to spawn as a Radiant Star.
 star_radiant_chance(String): star_radiant_chance
-star_supergiant_multi_desc(String):
+star_supergiant_multi_desc(String): The multiplier on the value of a Star when it is a Supergiant. (Base: 3x)
 star_supergiant_multi(String): star_supergiant_multi
-star_supernova_multi_desc(String):
+star_supernova_multi_desc(String): The multiplier on the value of a Star when it is a Supernova. (Base: 10x)
 star_supernova_multi(String): star_supernova_multi
-star_triple_spawn_chance_desc(String):
+star_triple_spawn_chance_desc(String): The chance for three Stars to appear when one spawns.
 star_triple_spawn_chance(String): star_triple_spawn_chance
-super_star_supergiant_chance_desc(String):
+super_star_supergiant_chance_desc(String): The chance for a Super Star to spawn as a Supergiant.
 super_star_supergiant_chance(String): super_star_supergiant_chance
-all_star_multi_desc(String):
+all_star_multi_desc(String): The multiplier on the value of all Stars and Superstars.
 all_star_multi(String): all_star_multi
-star_double_spawn_chance_desc(String):
+star_double_spawn_chance_desc(String): The chance for two Stars to appear when one spawns.
 star_double_spawn_chance(String): star_double_spawn_chance
-super_star_radiant_multi_desc(String):
+super_star_radiant_multi_desc(String): The multiplier on the value of a Super Star when it is a Radiant Super Star. (Base: 10x)
 super_star_radiant_multi(String): super_star_radiant_multi
-star_supergiant_chance_desc(String):
+star_supergiant_chance_desc(String): The chance for a Star to spawn as a Supergiant.
 star_supergiant_chance(String): star_supergiant_chance
-super_star_supernova_multi_desc(String):
+super_star_supernova_multi_desc(String): The multiplier on the value of a Super Star when it is a Supernova. (Base: 10x)
 super_star_supernova_multi(String): super_star_supernova_multi
 super_star_supergiant_multi_desc(String): The multiplier on the value of a Star when it is a Supergiant. (Base: 3x)
 super_star_supergiant_multi(String): super_star_supergiant_multi
@@ -120,42 +120,42 @@ is_drone_angler_equipped_and_fueled_desc: Is Angler Drone Fueled and active
 
 ~ Drones
 galactic_void_portal_multi: galactic_void_portal_multi
-galactic_void_portal_multi_desc:
+galactic_void_portal_multi_desc: The additional multiplier to resources in a Rainbow Void Portal when it rolls as a Galactic Void Portal.
 void_portal_multi: void_portal_multi
-void_portal_multi_desc:
+void_portal_multi_desc: Multiplies the Void Drone portal multiplier.
 galactic_void_portal_chance: galactic_void_portal_chance
-galactic_void_portal_chance_desc:
-coal_fuel_save_chance_desc(String):
+galactic_void_portal_chance_desc: The chance for a Rainbow Void Portal to spawn as a Galactic Void Portal.
+coal_fuel_save_chance_desc(String): The chance to save fuel when fueling drones.
 coal_fuel_save_chance(String): coal_fuel_save_chance
-drone_suit_cap_desc(String):
+drone_suit_cap_desc(String): The cap of your drone suit upgrades. The base cap is 5.
 drone_suit_cap(String): drone_suit_cap
 drone_count_desc(String): Number of Drone Owned
 drone_count(String): drone_count
-all_void_portal_multi_desc(String):
+all_void_portal_multi_desc(String): Mult added to every single void portal multi
 all_void_portal_multi(String): all_void_portal_multi
-golden_void_portal_chance_desc(String):
+golden_void_portal_chance_desc(String): The chance for a void portal to be golden.
 golden_void_portal_chance(String): golden_void_portal_chance
-void_portal_chance_desc(String):
+void_portal_chance_desc(String): The chance for an ore node to be replaced by a void portal.
 void_portal_chance(String): void_portal_chance
-coal_fuel_duration_multi_desc(String):
+coal_fuel_duration_multi_desc(String): Multiplies your drone fuel duration.
 coal_fuel_duration_multi(String): coal_fuel_duration_multi
-drone_triple_damage_chance_desc(String):
+drone_triple_damage_chance_desc(String): The chance for your drones to deal triple damage.
 drone_triple_damage_chance(String): drone_triple_damage_chance
-drone_attack_speed_percent_desc(String):
+drone_attack_speed_percent_desc(String): Increases the attack speed of your drones. The Base attack speed is 1.25 times per second.
 drone_attack_speed_percent(String): drone_attack_speed_percent
-coal_drone_exp_multi_desc(String):
+coal_drone_exp_multi_desc(String): Multiplies your drone experience.
 coal_drone_exp_multi(String): coal_drone_exp_multi
-elixir_crit_multi_desc(String):
+elixir_crit_multi_desc(String): The duration multiplier applied to buffs when the elixir drone crits. (Base 3x)
 elixir_crit_multi(String): elixir_crit_multi
-rainbow_void_portal_multi_desc(String):
+rainbow_void_portal_multi_desc(String): The additional multiplier to resources in a Golden Void Portal when it rolls as a Rainbow Void Portal. (Base: 5x)
 rainbow_void_portal_multi(String): rainbow_void_portal_multi
-elixir_crit_chance_desc(String):
+elixir_crit_chance_desc(String): The chance for the elixir drone to crit.
 elixir_crit_chance(String): elixir_crit_chance
-golden_void_portal_multi_desc(String):
+golden_void_portal_multi_desc(String): The additional multiplier to resources in a Void Portal when a Golden Void Portal triggers. (Base: 5x)
 golden_void_portal_multi(String): golden_void_portal_multi
-drone_movespeed_percent_desc(String):
+drone_movespeed_percent_desc(String): Increases the move speed of your drones.
 drone_movespeed_percent(String): drone_movespeed_percent
-rainbow_void_portal_chance_desc(String):
+rainbow_void_portal_chance_desc(String): The chance for a Golden Void Portal to spawn as a Rainbow Void Portal.
 rainbow_void_portal_chance(String): rainbow_void_portal_chance
 coal_generation_seconds_desc(String): The time it takes your generator to produce coal. (Base is 90 seconds, reduced by upgrades and affected by game speed).
 coal_generation_seconds(String): coal_generation_seconds
@@ -171,33 +171,33 @@ drone_damage_percent_desc(String): Multiplies Pickaxe Damage to determine the da
 drone_damage_percent(String): drone_damage_percent
 
 ~ Bombs
-bomb_crit_damage_desc(String):
+bomb_crit_damage_desc(String): The amount to multiply your bomb damage by when Bomb Crit Chance triggers.
 bomb_crit_damage(String): bomb_crit_damage
-bomb_super_crit_chance_desc(String):
+bomb_super_crit_chance_desc(String): The chance to multiply your bomb damage by Bomb Super Crit Damage. Only rolls when Bomb Crit Chance activates.
 bomb_super_crit_chance(String): bomb_super_crit_chance
-bomb_trans_apply_bop_chance_desc(String):
+bomb_trans_apply_bop_chance_desc(String): The chance of applying bop in addition to trans while using trans bomb
 bomb_trans_apply_bop_chance(String): bomb_trans_apply_bop_chance
-bomb_recharge_speed_desc(String):
+bomb_recharge_speed_desc(String): Divides the time it takes your bombs to recharge.
 bomb_recharge_speed(String): bomb_recharge_speed
-bomb_ultra_crit_damage_desc(String):
+bomb_ultra_crit_damage_desc(String): The amount to multiply your bomb damage by when Bomb Ultra Crit Chance triggers.
 bomb_ultra_crit_damage(String): bomb_ultra_crit_damage
-bomb_of_plenty_multi_desc(String):
+bomb_of_plenty_multi_desc(String): The number of time bop effect multiply the number of ores gained
 bomb_of_plenty_multi(String): bomb_of_plenty_multi
-bomb_workshop_cap_increase_desc(String):
+bomb_workshop_cap_increase_desc(String): Increase the cap of most workshop upgrades. 
 bomb_workshop_cap_increase(String): bomb_workshop_cap_increase
-bomb_capacity_desc(String):
+bomb_capacity_desc(String): Total bomb capacity. Doesn't apply to Founders Bomb.
 bomb_capacity(String): bomb_capacity
-bomb_cap_multiplier_desc(String):
+bomb_cap_multiplier_desc(String): Multiplies your bomb capacity.
 bomb_cap_multiplier(String): bomb_cap_multiplier
-bomb_ultra_crit_chance_desc(String):
+bomb_ultra_crit_chance_desc(String): The chance to multiply your bomb damage by Bomb Ultra Crit Damage. Only rolls when Bomb Super Crit Chance activates.
 bomb_ultra_crit_chance(String): bomb_ultra_crit_chance
-bomb_crit_chance_desc(String):
+bomb_crit_chance_desc(String): The chance to multiply your bomb damage by Bomb Crit Damage.
 bomb_crit_chance(String): bomb_crit_chance
-bomb_free_chance_desc(String):
+bomb_free_chance_desc(String): The chance for your bombs to not use charges.
 bomb_free_chance(String): bomb_free_chance
-bomb_cherry3x_chance_desc(String):
+bomb_cherry3x_chance_desc(String): The chance to get 3 Cherry charges from one Cherry Bomb.
 bomb_cherry3x_chance(String): bomb_cherry3x_chance
-bomb_super_crit_damage_desc(String):
+bomb_super_crit_damage_desc(String): The amount to multiply your bomb damage by when Bomb Super Crit Chance triggers.
 bomb_super_crit_damage(String): bomb_super_crit_damage
 bomb_omega_crit_chance_desc(String): The amount to multiply your damage by when Pickaxe Omega Crit Chance triggers.
 bomb_omega_crit_chance(String): bomb_omega_crit_chance
@@ -216,30 +216,24 @@ bomb_omega_crit_damage(String): bomb_omega_crit_damage
 
 ~ Ore
 ores_per_screen: ores_per_screen
-ores_per_screen_desc:
-multi_rock_chance_desc(String):
+ores_per_screen_desc: Number of ores on the screen at the same time
+multi_rock_chance_desc(String): The chance to spawn a bigger rock that gives 3x ore.
 multi_rock_chance(String): multi_rock_chance
-ore_income_multi_desc(String):
+ore_income_multi_desc(String): Multiplies ore gained.
 ore_income_multi(String): ore_income_multi
-bar_craft_cost_multi_desc(String):
-bar_craft_cost_multi(String): bar_craft_cost_multi
-golden_floor_chance_desc(String):
+golden_floor_chance_desc(String): The chance for a floor to be golden.
 golden_floor_chance(String): golden_floor_chance
-bar_output_multi_desc(String):
-bar_output_multi(String): bar_output_multi
-ore_sell_price_multi_desc(String):
+ore_sell_price_multi_desc(String): Multiplies ore sell price.
 ore_sell_price_multi(String): ore_sell_price_multi
-steak_eaten_desc(String):
+steak_eaten_desc(String): The number of steaks eaten. The effect caps at 500, but the Steaks Eaten stat will keep increasing beyond that point.
 steak_eaten(String): steak_eaten
-bar_upgrade_cost_reduction_desc(String):
-bar_upgrade_cost_reduction(String): bar_upgrade_cost_reduction
-rainbow_floor_chance_desc(String):
+rainbow_floor_chance_desc(String): The chance for a floor to be rainbow. Golden and Rainbow Floor Chance roll separately, a floor can be rainbow but not golden.
 rainbow_floor_chance(String): rainbow_floor_chance
-pizzas_eaten_desc(String):
+pizzas_eaten_desc(String): The number of pizzas eaten. The effect caps at 200, but the Pizzas Eaten stat will keep increasing beyond that point.
 pizzas_eaten(String): pizzas_eaten
-galactic_floor_multi_desc(String):
+galactic_floor_multi_desc(String): The multiplier to ore gained from a Galactic Rainbow floor. The All Floor Multi is factored into the displayed amount. (Base: 10x)
 galactic_floor_multi(String): galactic_floor_multi
-golden_ore_chance_desc(String):
+golden_ore_chance_desc(String): The chance for ore to be golden.
 golden_ore_chance(String): golden_ore_chance
 golden_floor_multi_desc(String): The multiplier to ore gained when Golden Ore Chance triggers. (Base: 3x)
 golden_floor_multi(String): golden_floor_multi
@@ -275,45 +269,51 @@ contract_upgrade_cost_reduction_desc(String): The amount by which Contract Upgra
 contract_upgrade_cost_reduction(String): contract_upgrade_cost_reduction
 
 ~ Crafting
-double_craft_chance_desc(String):
+double_craft_chance_desc(String): The chance for a craft to give 2x bars.
 double_craft_chance(String): double_craft_chance
-craft_20x_chance_desc(String):
+craft_20x_chance_desc(String): The chance for a craft to give 20x bars.
 craft_20x_chance(String): craft_20x_chance
-triple_craft_chance_desc(String):
+triple_craft_chance_desc(String): The chance for a craft to give 3x bars.
 triple_craft_chance(String): triple_craft_chance
-craft_10x_chance_desc(String):
+craft_10x_chance_desc(String): The chance for a craft to give 10x bars.
 craft_10x_chance(String): craft_10x_chance
-craft_5x_chance_desc(String):
+craft_5x_chance_desc(String): The chance for a craft to give 5x bars.
 craft_5x_chance(String): craft_5x_chance
-free_craft_chance_desc(String):
+free_craft_chance_desc(String): The chance for a craft to not consume ore.
 free_craft_chance(String): free_craft_chance
 craft_100x_chance_desc(String): The chance for a craft to give 100x bars.
 craft_100x_chance(String): craft_100x_chance
+bar_craft_cost_multi_desc(String): The multiplier applied to the amount of ore required to craft a bar.
+bar_craft_cost_multi(String): bar_craft_cost_multi
+bar_upgrade_cost_reduction_desc(String): The multiplier applied to the number of bars that Upgrades cost.
+bar_upgrade_cost_reduction(String): bar_upgrade_cost_reduction
+bar_output_multi_desc(String): The multiplier applied to the number of bars you receive from sources of bar creation like crafting or Transmuter Bomb.
+bar_output_multi(String): bar_output_multi
 
 ~ Fishing
-fishing_rod_power_desc(String):
+fishing_rod_power_desc(String): The fishing power of your fishing rod.
 fishing_rod_power(String): fishing_rod_power
-fishing_tiny_notice_chance_desc(String):
+fishing_tiny_notice_chance_desc(String): The chance for a Notice to ask for 90% less fish.
 fishing_tiny_notice_chance(String): fishing_tiny_notice_chance
-fishing_double_tick_chance_desc(String):
+fishing_double_tick_chance_desc(String): The chance to get 2 Fishing ticks when the tick bar fills up.
 fishing_double_tick_chance(String): fishing_double_tick_chance
-fishing_income_multi_desc(String):
+fishing_income_multi_desc(String): The multiplier on the number of fish caught.
 fishing_income_multi(String): fishing_income_multi
-fishing_tick_speed_desc(String):
+fishing_tick_speed_desc(String): number of second based on the reduced amount. Divided by sixty to get your number of tick per minute.
 fishing_tick_speed(String): fishing_tick_speed
-fishing_tick_reduction_seconds_desc(String):
+fishing_tick_reduction_seconds_desc(String): The reduction to the amount of time that the fishing tick bar takes to fill up.
 fishing_tick_reduction_seconds(String): fishing_tick_reduction_seconds
-fishing_super_shiny_chance_desc(String):
+fishing_super_shiny_chance_desc(String): The chance for a shiny catch of fish to be super shiny.
 fishing_super_shiny_chance(String): fishing_super_shiny_chance
-fishing_triple_tick_chance_desc(String):
+fishing_triple_tick_chance_desc(String): The chance to get 3 Fishing ticks when the tick bar fills up.
 fishing_triple_tick_chance(String): fishing_triple_tick_chance
-fishing_drone_capacity_desc(String):
+fishing_drone_capacity_desc(String): The number of Fishing Drones you have available to assign to docks.
 fishing_drone_capacity(String): fishing_drone_capacity
-fishing_shiny_chance_desc(String):
+fishing_shiny_chance_desc(String): The chance for a shiny catch of fish.
 fishing_shiny_chance(String): fishing_shiny_chance
-fishing_token_multi_desc(String):
+fishing_token_multi_desc(String): The multiplier on Fish Tokens gained from Notices.
 fishing_token_multi(String): fishing_token_multi
-fishing_drone_multiplier_desc(String):
+fishing_drone_multiplier_desc(String): The multiplier on Fishing Drone Base Power that gives the total fishing power per Fishing Drone.
 fishing_drone_multiplier(String): fishing_drone_multiplier
 fishing_shiny_multi_desc(String): The multiplier on fish caught when a catch is shiny. (Base: 3x)
 fishing_shiny_multi(String): fishing_shiny_multi
@@ -386,7 +386,7 @@ statue_0_set1(String): statue_0_set1
 
 ~ Misc
 infernal_card_multi: infernal_card_multi
-infernal_card_multi_desc: 
+infernal_card_multi_desc: Boost your infernal card multi.
 gem_upgrade_cap_increase_desc(String): Increases the cap of Gem Upgrades in the Store.
 gem_upgrade_cap_increase(String): gem_upgrade_cap_increase
 item_duration_multi_desc(String): Increases Item duration.
