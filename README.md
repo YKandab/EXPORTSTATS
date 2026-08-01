@@ -5,7 +5,7 @@ A IDLE OBELISK MINER "EXPORTSTATS" json reader for Java
 The objective is to give the Player an access to their data and everything linked to their account BY ONLY THE WAY OF THE OFFICIAL JSON.
 
 ## Current Progress
-Still WIP: It is updated to 2.2.6 BUT it still requires some localization in texts/en/stats.bdeko
+Wait for more stats to continue. Code will be mainly adding small feature rather than directly useful element.
 
 ## How it works
 
